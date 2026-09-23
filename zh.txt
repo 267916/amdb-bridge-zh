@@ -1,0 +1,92 @@
+﻿# AMDB Bridge 中文壳 —— 外置词表
+#
+# 格式：英文原文=中文译文    （每行一条，# 开头为注释，空行忽略）
+# 这里列出的词条会覆盖程序内置词表；也可以在这里新增程序内置表没有的词条。
+# 本文件是 UTF-8 编码，请勿改存为 ANSI，否则中文会变乱码。
+#
+# 用途：AMDB Bridge 更新后，如果有新出现的英文没被汉化，
+#       把新句子加到这里即可，不必重新编译。
+
+Version=版本
+Airport moving maps for your simulator, built from free open data.=用免费开放数据为你的模拟器生成机场移动地图。
+Start=开始
+Stop=停止
+Starting=正在启动
+Not serving=未提供服务
+Serving maps=正在提供地图
+Stopped=已停止
+Could not start=无法启动
+Try again=重试
+Getting ready. This takes a moment the first time.=正在准备，首次需要一点时间。
+Press Start before loading your aircraft.=加载机模前请先点“开始”。
+Simulators and aircraft=模拟器与机模
+Approach charts=进近航图
+Options=选项
+Activity=活动记录
+Airport=机场
+Where=位置
+What=内容
+Status=状态
+Aircraft=机模
+Approach=进近程序
+Runway=跑道
+Arrivals that feed it=衔接的进场
+Install or update A220 map=安装或更新 A220 地图
+Remove A220 map=移除 A220 地图
+Refresh=刷新
+Find procedures=查找程序
+Draw chart=绘制航图
+Aircraft report=机模报告
+Airports folder=机场文件夹
+Save log=保存日志
+Change [char][Convert]::ToInt32($args[0].Groups[1].Value,16) =更改 [char][Convert]::ToInt32($args[0].Groups[1].Value,16) 
+Change=更改
+Menu=菜单
+Limit=上限
+none=无
+Tablet charts: OFF=平板航图：关
+Tablet charts: ON=平板航图：开
+Start serving as soon as AMDB Bridge opens=AMDB Bridge 打开后立即开始服务
+Open AMDB Bridge in the notification area when Windows starts=Windows 启动时在通知区域打开 AMDB Bridge
+Open AMDB Bridge when Microsoft Flight Simulator starts=Microsoft Flight Simulator 启动时打开 AMDB Bridge
+Install the X-Plane 12 moving map when serving starts=开始服务时安装 X-Plane 12 移动地图
+Also serve the iniBuilds A350 and FlyByWire A380X (asks for administrator permission once)=同时服务 iniBuilds A350 与 FlyByWire A380X（需要一次管理员授权）
+Keep built airports on disk, so they load instantly next time=把生成的机场保存在磁盘上，下次即刻载入
+Serve the A350 and A380X=服务 A350 与 A380X
+Synaptic A220 moving map=Synaptic A220 移动地图
+Tablet charts: iniBuilds A350=平板航图：iniBuilds A350
+Not installed=未安装
+Ready=就绪
+Missing=缺失
+Its own (Navigraph)=自带（Navigraph）
+its own (Navigraph)=自带（Navigraph）
+patched=已打补丁
+NOT patched=未打补丁
+redirect=重定向
+Type an airport's ICAO code first, like LPMA or KJFK=请先输入机场 ICAO 代码，例如 LPMA 或 KJFK
+Storage changes apply the next time serving starts=存储设置将在下次开始服务时生效
+Where should built airports be kept?=生成的机场保存在哪里？
+There is no log yet=暂时还没有日志
+No chart tablets found=未找到平板航图设备
+Collecting aircraft information=正在收集机模信息
+Send both files with your report=提交报告时请附上这两个文件
+The A220 map and X-Plane do not need this.=A220 地图与 X-Plane 不需要此项。
+Any other A220 map it set aside is put back.=被它挪开的其他 A220 地图会被放回原位。
+Remove the A220 moving map from every simulator on this computer?=从本机所有模拟器中移除 A220 移动地图？
+The A220 map is installed. Restart Microsoft Flight Simulator to load it.=A220 地图已安装。请重启 Microsoft Flight Simulator 以加载。
+AMDB Bridge is in the notification area. Right-click the icon to exit.=AMDB Bridge 已缩到通知区域。右键图标可退出。
+Still serving maps. Open AMDB Bridge or exit it from this icon.=仍在提供服务。可打开 AMDB Bridge，或从此图标退出。
+The iniBuilds A350 and FlyByWire A380X ask Navigraph's map server for airports directly. To answer them, AMDB Bridge points that address at this computer, installs a local certificate, and patches the A350's EFB so it does not ask you to sign in.=iniBuilds A350 与 FlyByWire A380X 会直接向 Navigraph 的地图服务器请求机场数据。为了应答它们，AMDB Bridge 会把这个地址指向本机、安装一个本地证书，并改写 A350 的 EFB，使其不再要求你登录。
+Windows asks for administrator permission once. While this option is on, those aircraft get their airport maps from AMDB Bridge, so keep it running when you fly them. Untick it, or uninstall AMDB Bridge, to undo all of it.=Windows 会要求一次管理员授权。此选项开启期间，这些机模的机场地图由 AMDB Bridge 提供，因此飞行时请保持其运行。取消勾选或卸载 AMDB Bridge 即可完全撤销。
+no simulator has an exe.xml yet - start Microsoft Flight Simulator once, then try again=还没有任何模拟器生成 exe.xml —— 请先启动一次 Microsoft Flight Simulator，然后重试
+please enter a number of megabytes=请输入一个兆字节(MB)数值
+please give a full path (e.g. D:/amdb-cache)=请输入完整路径（例如 D:/amdb-cache）
+please answer y or n=请回答 y 或 n
+could not change the Windows start-up entry: =无法修改 Windows 启动项：
+the hosts-file redirect and certificate need administrator rights to remove=移除 hosts 重定向与证书需要管理员权限
+Could not start: =无法启动：
+Could not save the log: =无法保存日志：
+Could not save settings: =无法保存设置：
+Log saved to Downloads: =日志已保存到下载文件夹：
+Saved to Downloads: =已保存到下载文件夹：
+Could not change the tablets in =无法更改平板航图：
