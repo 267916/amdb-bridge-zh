@@ -1,8 +1,18 @@
 # AMDB Bridge 中文壳
 
-把 [AMDB Bridge](https://github.com/Vihaan2012-cmyk/Free-Airport-Mapping-DB) 的英文界面实时显示为中文。
+把 **AMDB Bridge** 的英文界面实时显示为中文。
 
 **本仓库只包含中文壳，不包含 AMDB Bridge 本体。**
+
+> ### AMDB Bridge 本体去哪下载
+>
+> | 渠道 | 地址 |
+> |---|---|
+> | 官方发布页（Flightsim.to） | https://flightsim.to/addon/115176/free-oans-anf-btv-for-msfs2020-and-msfs2024 |
+> | 开源仓库（GitHub） | https://github.com/Vihaan2012-cmyk/Free-Airport-Mapping-DB |
+> | 直接下载最新版 | https://github.com/Vihaan2012-cmyk/Free-Airport-Mapping-DB/releases/latest |
+>
+> 先装好 AMDB Bridge，再用本中文壳。本工具会自动找到它。
 
 ---
 
