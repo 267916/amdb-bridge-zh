@@ -440,7 +440,7 @@ class AmdbZh
             string f = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "zh.txt");
             if (!System.IO.File.Exists(f)) return;
             int n = 0;
-            foreach (string line in System.IO.File.ReadAllLines(f, Encoding.UTF8))
+            foreach (string line in ReadLinesAuto(f))
             {
                 string s = line.Trim();
                 if (s.Length == 0 || s.StartsWith("#")) continue;
@@ -581,6 +581,24 @@ class AmdbZh
             Console.WriteLine("已启动 AMDB Bridge。");
         }
         catch (Exception e) { Console.WriteLine("启动 AMDB Bridge 失败：" + e.Message); }
+    }
+    // 编码自动识别：玩家用记事本改 zh.txt 可能存成 ANSI/GBK，这里自动兼容。
+    static string[] ReadLinesAuto(string path)
+    {
+        byte[] b = System.IO.File.ReadAllBytes(path);
+        if (b.Length >= 3 && b[0] == 0xEF && b[1] == 0xBB && b[2] == 0xBF)
+            return new UTF8Encoding(false).GetString(b, 3, b.Length - 3).Replace("\r\n", "\n").Replace("\r", "\n").Split('\n');
+        if (b.Length >= 2 && b[0] == 0xFF && b[1] == 0xFE)
+            return Encoding.Unicode.GetString(b, 2, b.Length - 2).Replace("\r\n", "\n").Replace("\r", "\n").Split('\n');
+        try
+        {
+            return new UTF8Encoding(false, true).GetString(b).Replace("\r\n", "\n").Replace("\r", "\n").Split('\n');
+        }
+        catch (DecoderFallbackException)
+        {
+            try { return Encoding.GetEncoding(936).GetString(b).Replace("\r\n", "\n").Replace("\r", "\n").Split('\n'); }
+            catch { return System.IO.File.ReadAllLines(path); }
+        }
     }
     static void Main(string[] args)
     {
